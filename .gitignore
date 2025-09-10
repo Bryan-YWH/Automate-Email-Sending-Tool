@@ -2,6 +2,7 @@
 state.json
 .env
 .env.*
+!.env.example
 
 # Data files
 contacts.xlsx
