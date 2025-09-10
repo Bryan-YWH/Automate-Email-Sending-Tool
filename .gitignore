@@ -1,0 +1,24 @@
+# Local configs and secrets
+state.json
+.env
+.env.*
+
+# Data files
+contacts.xlsx
+attachments/
+master.pdf
+send_log_*.csv
+send_log_final_*.csv
+
+# IDE/editor
+.vscode/
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Playwright
+playwright-report/
