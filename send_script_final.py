@@ -1,3 +1,17 @@
+"""
+Outlook Web 批量邮件发送脚本
+
+功能：
+- 从 Excel 文件读取联系人信息
+- 自动登录 Outlook Web 并发送邮件
+- 支持附件上传（按姓名命名的 PDF 文件）
+- 可配置邮件主题和正文模板
+- 支持详细/最小化日志模式
+
+作者：Bryan-WH
+许可证：MIT
+"""
+
 import os
 import pandas as pd
 from playwright.sync_api import sync_playwright
@@ -8,7 +22,15 @@ from typing import Dict
 
 
 def load_env_file(env_path: str = ".env") -> Dict[str, str]:
-    """Minimal .env loader to avoid external deps."""
+    """
+    简单的 .env 文件加载器，避免外部依赖
+    
+    Args:
+        env_path: .env 文件路径
+        
+    Returns:
+        包含环境变量的字典
+    """
     env: Dict[str, str] = {}
     if not os.path.exists(env_path):
         return env
