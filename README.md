@@ -1,4 +1,4 @@
-# Outlook Web 批量邮件发送工具
+# Automate Email Sending Tool
 
 <div align="center">
 
