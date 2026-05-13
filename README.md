@@ -136,21 +136,6 @@ python split_pdf_by_contacts.py
 
 按 `contacts.xlsx` 的行序将 `master.pdf` 拆分为个人 PDF 文件。
 
----
-
-## 安全注意事项
-
-<div align="center">
-
-🛡️ **安全第一** 🛡️
-
-</div>
-
-- ✅ 使用 `.env` 文件管理配置，不提交到仓库
-- ✅ `.gitignore` 已配置忽略敏感文件
-- ✅ 默认使用最小化日志模式
-- ❌ 不要提交包含真实个人信息的文件
-- ❌ 不要在代码中硬编码敏感信息
 
 ---
 
